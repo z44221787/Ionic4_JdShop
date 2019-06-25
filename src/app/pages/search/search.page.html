@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-toolbar> 
+      <ion-buttons slot="start">
+        <ion-button (tap)="goBack()">
+          <ion-icon slot="icon-only" name="arrow-back" color="dark"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+      <ion-searchbar placeholder="搜索商品" animated></ion-searchbar>
+
+     <ion-buttons slot="end">
+        <ion-button (click)="doSearch()" color="dark">
+          搜索
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <ion-toolbar class="sub_toolbar">
+      <div class="subheader">
+          <div class="">综合</div>
+          <div>销量</div>
+          <div>价格</div>
+      </div>       
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <div class="search_content" *ngIf="flag">
+      <div class="hotlist">
+        <h3 class="search_title">热搜</h3>
+        <p>
+          <span>女装</span>
+          <span>男装</span>
+          <span>家具</span>
+          <span>化妆品</span>
+          <span>女装</span>
+          <span>女装</span>
+          <span>男装</span>
+          <span>家具</span>
+          <span>化妆品</span>
+          <span>女装</span>
+          <span>女装</span>
+          <span>男装</span>
+          <span>家具</span>
+          <span>化妆品</span>
+          <span>女装</span>
+        </p>
+  
+      </div>
+  
+      <div class="history">
+  
+        <h3 class="search_title">历史搜索</h3>
+  
+        <ion-list lines="full">
+          <ion-item>
+            男装
+          </ion-item>
+          <ion-item>
+            女装
+          </ion-item>
+          <ion-item>
+            汽车
+          </ion-item>
+          <ion-item>
+            美容
+          </ion-item>
+        </ion-list>
+  
+      </div>
+  
+    </div>
+
+    <div class="list_content" *ngIf="!flag">
+      <ion-list>
+          <ion-item *ngFor="let item of pList">
+              <ion-thumbnail slot="start">
+                <img [src]='item.url'>
+              </ion-thumbnail>
+              <ion-label>
+                <h3>{{item.title | stringSplit:30 }}</h3>
+                <p>价格：<span class="price">￥10.5</span></p>
+              </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>

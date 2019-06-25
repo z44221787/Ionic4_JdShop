@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>手机快速注册</ion-title>
+    <app-goback></app-goback>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item lines="none" class="inputitem">
+      <ion-select [(ngModel)]="phoneType" interface="popover">
+          <ion-select-option value="+86">+86</ion-select-option>
+          <ion-select-option value="+24">+24</ion-select-option>
+      </ion-select>
+      <ion-input clearInput="true" type="text" [(ngModel)]="telphoneNum" placeholder="请输入手机号码"></ion-input>
+    </ion-item>
+    <ion-button (click)="nextstep()" expand="full">
+      下一步
+    </ion-button>
+    <ion-item class="footer" lines="none">
+      <span color="medium" slot="start">遇到问题?您可要选择
+          <span (click)="contact()"  class="contact" color="dark">联系客服</span>
+      </span>
+    </ion-item>
+  </ion-list>
+
+
+
+
+</ion-content>

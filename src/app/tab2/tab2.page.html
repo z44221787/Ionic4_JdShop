@@ -1,9 +1,36 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-search #searchbar></app-search>
 
-<ion-content></ion-content>
+<ion-content>
+  <div class="cate_content">
+    <div class="cate_left">
+      <ion-list lines="full">
+        <ion-list-header>
+          <ion-label>京东超市</ion-label>
+        </ion-list-header>
+        <ion-item *ngFor="let item of pTypeList">
+          <ion-label>{{item.title}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+    <div class="cate_right">
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="12" class="h_title">
+            羽绒服
+          </ion-col>
+          <ion-col size="4" *ngFor="let item of pList">
+            <img [src]="item.url" href="#">
+            <p>{{item.title}}</p>
+          </ion-col>
+          <ion-col size="12" class="h_title">
+            睡衣
+          </ion-col>
+          <ion-col size="4" *ngFor="let item of pList">
+            <img [src]="item.url" href="#">
+            <p>{{item.title}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

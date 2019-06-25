@@ -1,5 +1,7 @@
 {
   "name": "jdshop",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

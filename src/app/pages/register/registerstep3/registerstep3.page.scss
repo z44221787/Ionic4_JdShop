@@ -1,0 +1,50 @@
+ion-content{
+    ion-list{
+        .inputitem {
+            padding-top: 0.1rem;
+            padding-bottom: 0.1rem;
+            ion-button{
+                width:40%;
+                height: 3rem;
+            }
+        }
+
+        .footer{
+            font-size: 1.4rem;
+            .contact{
+                font-weight: bolder;
+                border-bottom: 1px solid black;
+            }
+        }
+
+        ion-item{
+            ion-input,ion-label,span{
+                font-size: 1.4rem;
+            }
+
+            .checkout_info{
+                font-size: 1.4rem;
+                font-weight: bolder;
+            
+                ion-checkbox{
+                    width: 1.4rem;
+                    height: 1.4rem;
+                }
+            }
+        }
+
+        .tipInfo{
+            padding: 0.1rem 0 2rem 0;
+            color: silver;
+        }
+
+        ion-button {
+            --background:#d6d5d5;
+            --background-activated:silver;
+            --color:#848080;
+            --color-activated:#848080;
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+}

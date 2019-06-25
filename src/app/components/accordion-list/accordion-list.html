@@ -1,0 +1,19 @@
+<ion-item mode="md" lines="none" class="accordion-list">
+  <ion-button class="accordion-header" [ngClass]="{'active': expanded}" color="{{headerColor}}"
+    (click)="toggleAccordion()" expand="full">
+    <ion-icon class="accordion-icon" [name]="arrowName"></ion-icon>
+    <span>{{ title }}</span>
+  </ion-button>
+</ion-item>
+<ion-item mode="md" #accordionContent class="accordion-c">
+  <section [ngStyle]="{'background': contentColor}" [ngClass]="{'active': expanded}" class="accordion-content">
+    <ng-content></ng-content>
+  </section>
+</ion-item>
+
+<!-- 使用范例
+<accordion-list *ngFor="let item of items; let index = index" [title]="item.name" textColor="red" headerColor="danger" [expanded]="index === -1">
+  <img [src]="item.imageUrl">
+  <p text-wrap>{{item.description}}</p>
+</accordion-list> 
+-->

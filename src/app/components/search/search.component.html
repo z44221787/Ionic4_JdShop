@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <img src="/assets/qrcode.png" style="width: 30px;" (click)="openQrCode()">
+    </ion-buttons>
+    <ion-searchbar placeholder="请输入关键词" animated (tap)="openSearchPage($event)">
+    </ion-searchbar>
+    <ion-buttons slot="end" class="search_message">
+      <img src="/assets/message.png" style="width: 30px;">
+      <ion-badge  [routerLink]="[ '/test']" color="danger" class="badge">8</ion-badge>
+    </ion-buttons>
+  </ion-toolbar>
+  <div style='position:absolute; top:10px;'>
+    <ion-list>
+      <ion-item>
+        <ion-label>Awesome Label</ion-label>
+      </ion-item>  
+    </ion-list>
+  </div>
+</ion-header>

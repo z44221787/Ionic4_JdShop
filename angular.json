@@ -32,12 +32,13 @@
               }
             ],
             "styles": [
+              "node_modules/ng-zorro-antd-mobile/src/ng-zorro-antd-mobile.min.css",
               {
                 "input": "src/theme/variables.scss"
               },
               {
                 "input": "src/global.scss"
-              }
+              },
             ],
             "scripts": [],
             "es5BrowserSupport": true

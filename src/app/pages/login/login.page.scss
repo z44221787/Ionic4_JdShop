@@ -1,0 +1,32 @@
+ion-toolbar{
+    --border-color: #ffffff;
+}
+
+ion-content{
+    ion-list{
+        .forget_register{
+            font-size: 1.4rem;
+        }
+
+        ion-item{
+            ion-input{
+                font-size: 1.4rem;
+            }
+        }
+
+        ion-button {
+           // padding-top: 1rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .logo{
+        text-align: center;    
+        img{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 2rem;
+        }
+    }
+}

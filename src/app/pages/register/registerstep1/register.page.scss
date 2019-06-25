@@ -1,0 +1,37 @@
+ion-content{
+    ion-list{
+        .inputitem {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+
+            ion-select {
+                font-size: 1.4rem;
+                width: 20%;
+                margin-right: 1rem;
+            }
+        }
+
+        .footer{
+            font-size: 1.4rem;
+
+            .contact{
+                font-weight: bolder;
+                border-bottom: 1px solid black;
+            }
+        }
+
+        ion-item{
+            ion-input{
+                font-size: 1.4rem;
+            }
+        }
+        ion-button {
+            --background:#d6d5d5;
+            --background-activated:silver;
+            --color:#848080;
+            --color-activated:#848080;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+}

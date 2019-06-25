@@ -9,3 +9,94 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+   font-size: 1.4rem;
+}
+
+.clearfix {
+    &::after {
+        display: block;
+        content: "";
+        height: 0px;
+        clear: both;
+    }
+}
+
+.search_message {
+    position: relative;
+  
+    .badge {
+      position: absolute;
+      top: -4px;
+      right: -5px;
+      font-size: 0.5rem;
+    }
+  }
+
+  
+.h_title{
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    &::before{
+      // display : inline-block;
+      border-left: 0.3rem solid red;
+      font-weight: bolder;
+      height: 1.4rem;
+      width: 0.1rem;
+      top: 0.2rem;
+      content: "";
+    }
+  }
+
+  .price{
+    color:red;
+  }
+  

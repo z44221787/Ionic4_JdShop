@@ -1,1 +1,34 @@
+.cate_content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    .cate_left{
+        width: 30%;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        ion-list-header{
+            ion-label{
+                font-size: 1.4rem
+            }
+        }
+        ion-item{
+            ion-label{
+                font-size: 1.2rem
+            }
+        }
+    }
+
+    .cate_right{
+        flex: 1;
+        height: 100%;
+        overflow-y: auto;
+        overflow-x: hidden;
+        p{
+            text-align: center;
+        }
+    }
+}
+
+
 

@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>手机快速注册</ion-title>
+      <app-goback></app-goback>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list padding>
+        <ion-item lines="none">
+          <ion-label>请输入手机号13759446294收到的验证码：</ion-label>
+        </ion-item>
+      <ion-item lines="none" class="inputitem">
+        <ion-input clearInput="true" [(ngModel)]="code" type="text" placeholder="请输入验证码"></ion-input>
+        <ion-button (click)="resend()"   expand="full">
+         重新发送(101)
+        </ion-button>
+      </ion-item>
+
+
+      <ion-button (click)="nextstep()" expand="full">
+        下一步
+      </ion-button>
+      <ion-item class="footer" lines="none">
+        <span color="medium" slot="start">遇到问题?您可要选择
+            <span (click)="contact()"  class="contact" color="dark">联系客户</span>
+        </span>
+      </ion-item>
+    </ion-list>
+  
+  
+  
+  
+  </ion-content>

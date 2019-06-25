@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>手机快速注册</ion-title>
+      <app-goback></app-goback>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list padding>
+        <ion-item lines="inset">
+          <ion-label>设置登录密码</ion-label>
+        </ion-item>
+      <ion-item lines="inset" class="inputitem">
+        <ion-input [type]="pwdInputType" clearInput="true" [(ngModel)]="password" placeholder="请设置为6-20为字符"></ion-input>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-buttons slot="start" class="checkout_info">
+            <ion-checkbox color="danger" (ionChange)='changePwdView()' [(ngModel)]="changePwdview"></ion-checkbox>密码可见
+        </ion-buttons>
+      </ion-item>
+      <ion-item class="tipInfo" lines="none">
+        <span>密码由为6-20为字母,数字或特殊字符组成,不能低于6位字符且区分大小写</span>
+      </ion-item >
+      <ion-button (click)="nextstep()" expand="full">
+        完成
+      </ion-button>
+      <ion-item class="footer" lines="none">
+        <span color="medium" slot="start">遇到问题?您可要选择
+            <span (click)="contact()"  class="contact" color="dark">联系客户</span>
+        </span>
+      </ion-item>
+    </ion-list>
+  
+  
+  
+  
+  </ion-content>

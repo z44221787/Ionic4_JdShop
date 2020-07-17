@@ -37,7 +37,7 @@
     "cordova-plugin-wechat": "^2.8.0",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.19",
     "ng-zorro-antd-mobile": "^0.12.3",
     "phonegap-plugin-barcodescanner": "8.0.1",
     "rxjs": "~6.5.1",
